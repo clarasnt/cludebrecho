@@ -1,0 +1,170 @@
+@font-face {
+    font-family: varsity;
+    src: url('varsity_regular.ttf') format('opentype')
+}
+
+body{
+    background-color: rgb(150, 82, 65);
+}
+
+.menu{
+    opacity: 0;
+    position: relative;
+    top: 10px;
+    right: 10px;
+    transition:all 0.5s ease;
+}
+
+.div{
+    display: inline;
+    position: relative;
+}
+
+#clude{
+    top: 2px;
+    left: 2px;
+    height: 100px;
+    width: 190px;
+    border: solid white 4px;
+}
+
+#menu_texto{
+    opacity: 0;
+    position: absolute;
+    top:100px;
+    right: 2px;
+    transition:all 0.5s ease;
+    width: 50px;
+    height: 250px;
+}
+
+#roupas_menu{
+    top: 5px;
+    left: 2px;
+    height: 50px;
+    width: 190px;
+    border: solid white 4px;
+}
+
+#categorias{
+    position: relative;
+    transition:all 0.5s ease;
+    opacity: 0;
+    top: 10px;
+    left: 2px;
+    width: 190px;
+    height: 150px;
+    border: solid white 4px;
+}
+
+#todos_menu{
+    top: 2px;
+    left: 2px;
+    width: 180px;
+    height: 40px;
+    border: solid black 4px;
+}
+
+#corset_menu{
+    top: 5px;
+    left: 2px;
+    width: 180px;
+    height: 40px;
+    border: solid black 4px;
+}
+
+#mais_menu{
+    top: 5px;
+    left: 2px;
+    width: 180px;
+    height: 40px;
+    border: solid black 4px;
+}
+
+#menu{
+    opacity: 0;
+    position: absolute;
+    right: 0px;
+    top: 200px;
+    height: 500px;
+    width: 60px;
+    border: black solid 4px;
+    background-color: rgb(150, 82, 65);
+    transition:all 0.5s ease;
+}
+
+.produtos{
+    opacity: 0;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    transition:all 0.5s ease;
+}
+
+#voltar{
+    height: 73px;
+    width: 259px;
+}
+
+#camisa_social_triangulos_foto1{
+    height: 550px;
+    width: 430px;
+    border: 2px white solid;
+}
+
+#camisa_social_triangulos_foto2{
+    height: 550px;
+    width: 430px;
+    border: 2px white solid;
+}
+
+#camisa_social_triangulos_foto3{
+    height: 550px;
+    width: 430px;
+    border: 2px white solid;
+}
+
+#camisa_social_triangulos_foto4{
+    height: 550px;
+    width: 430px;
+    border: 2px white solid;
+}
+
+#camisa_social_triangulos{
+    height: 209px;
+    width:611px;
+    right: 10px;
+    position: relative;
+}
+
+#comprar1{
+    height: 85px;
+    width: 385px;
+    position: absolute;
+    top: -350px;
+    left: 30px;
+}
+
+#preco{
+    height: 85px;
+    width: 385px;
+    position: absolute;
+    top: -350px;
+    left: 30px;
+}
+
+#medidas{
+    height: 424px;
+    width: 450px;
+    position: absolute;
+    top: -470px;
+    left: 30px;
+}
+
+#comprar4{
+    height: 85;
+    width: 385px;
+    position: absolute;
+    top: -350px;
+    left: 30px;
+}
