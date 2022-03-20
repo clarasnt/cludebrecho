@@ -1,0 +1,125 @@
+@font-face {
+    font-family: varsity;
+    src: url('varsity_regular.ttf') format('opentype')
+}
+
+body{
+    background-color: rgb(150, 82, 65);
+}
+
+.menu{
+    opacity: 0;
+    position: relative;
+    top: 10px;
+    right: 0px;
+    transition:all 0.5s ease;
+}
+
+#clude{
+    top: 2px;
+    left: 2px;
+    height: 100px;
+    width: 190px;
+    border: solid white 4px;
+}
+
+#menu_texto{
+    opacity: 0;
+    position: absolute;
+    top:30px;
+    left: 10px;
+    transition:all 0.5s ease;
+    width: 80px;
+    height: 450px;
+}
+
+#roupas_menu{
+    top: 5px;
+    left: 2px;
+    height: 50px;
+    width: 190px;
+    border: solid white 4px;
+}
+
+#categorias{
+    position: relative;
+    transition:all 0.5s ease;
+    opacity: 0;
+    top: 10px;
+    left: 2px;
+    width: 190px;
+    height: 150px;
+    border: solid white 4px;
+}
+
+#todos_menu{
+    top: 2px;
+    left: 2px;
+    width: 180px;
+    height: 40px;
+    border: solid white 4px;
+}
+
+#corset_menu{
+    top: 5px;
+    left: 2px;
+    width: 180px;
+    height: 40px;
+    border: solid white 4px;
+}
+
+#mais_menu{
+    top: 5px;
+    left: 2px;
+    width: 180px;
+    height: 40px;
+    border: solid white 4px;
+}
+
+#menu{
+    opacity: 0;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 500px;
+    width: 100px;
+    border: black solid 4px;
+    background-color: rgb(150, 82, 65);
+    transition:all 0.5s ease;
+}
+
+.cinza{
+    opacity: 0;
+    position: relative;
+    top: 0px;
+    left: 300px;
+    height: 500px;
+    width: 350px;
+    transition:all 0.5s ease;
+}
+
+.title{
+    position: relative;
+    top: 200px;
+    height: 500px;
+    width: 350px;
+}
+
+#roupas{
+    height: 80px;
+    width: 300px;
+    position: absolute;
+    top: 240px;
+    left: 350px;
+    opacity: 0;
+    transition:all 0.5s ease;
+    
+}
+
+#social {
+    height: 80px;
+    width: 300px;
+    position: absolute;
+    top: 420px;
+    left: 425px;
+}
