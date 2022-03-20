@@ -1,3 +1,7 @@
+window.onload = function() {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        window.location.href = "todos_mobile.html"
+    } else {
 var produtos = document.querySelectorAll(".produtos")
 var menu = document.querySelector("#menu")
 var menus = document.querySelectorAll(".menu")
@@ -83,3 +87,4 @@ menus[1].addEventListener("mouseout", function(){
     menus[4].setAttribute("style", "opacity: 0")
     categorias.setAttribute("style", "opacity: 0")
 })
+    }}

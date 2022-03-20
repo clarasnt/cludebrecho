@@ -1,3 +1,8 @@
+window.onload = function() {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        window.location.href = "roupas_mobile.html"
+    } else {
+
 var categorias = document.querySelectorAll(".categorias")
 var menu = document.querySelector("#menu")
 var menus = document.querySelectorAll(".menu")
@@ -53,7 +58,7 @@ categorias[3].addEventListener("mouseout", function(){
     categorias[3].setAttribute("style", "height: 112px; width: 538px; opacity: 1; background-image: linear-gradient(to left, transparent, transparent);")
 })
 
-menu.addEventListener("mouseover", function(){
+menu.addEventListener("", function(){
     menus[0].setAttribute("style", "opacity: 1")
     menus[1].setAttribute("style", "opacity: 1")
     menu_texto.setAttribute("style", "opacity: 0")
@@ -66,3 +71,5 @@ menu.addEventListener("mouseout", function(){
     menu_texto.setAttribute("style", "opacity: 1")
     menu.setAttribute("style", "height: 500px; top: 200px; width: 60px; opacity: 1")
 })
+
+    }}
