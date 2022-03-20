@@ -32,7 +32,6 @@ setTimeout(() => {
 
 var clicado_c = 0
 var clicado_menu = 0
-var clicado_roupas = 0
 
 cinza[0].addEventListener("click", function(){
     if(clicado_c == 0){

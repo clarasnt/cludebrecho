@@ -4,6 +4,8 @@ var categorias = document.querySelectorAll(".categorias")
 var menu = document.querySelector("#menu")
 var menus = document.querySelectorAll(".menu")
 var menu_texto = document.querySelector("#menu_texto")
+var div_roupas = document.querySelector("#div_roupas")
+var div_clude = document.querySelector("#div_clude")
 
 setTimeout(() => {
     categorias[0].setAttribute("style", 'opacity: 1')
@@ -15,88 +17,113 @@ setTimeout(() => {
             categorias[2].setAttribute("style", 'opacity: 1')
             setTimeout(() => {
                 categorias[3].setAttribute("style", 'opacity: 1')
-                setTimeout(() => {
-                    categorias[4].setAttribute("style", 'opacity: 1')
-                }, 250);
             }, 250);
         }, 250);
     }, 250);
 }, 50);
 
-categorias[0].addEventListener("click", function(){
-    categorias[0].setAttribute("style", "height: 123px; width: 769px; opacity: 1; background-image: linear-gradient(to left, transparent, white);")
-    categorias[0].addEventListener("click", function(){
-        window.location.href = "roupas.html"
-    })
-})
+var clicado_menu = 0
+var clicado_categoria0 = 0
+var clicado_categoria1 = 0
+var clicado_categoria2 = 0
+var clicado_categoria3 = 0
 
-categorias[0].addEventListener("mouseout", function(){
-    categorias[0].setAttribute("style", "height: 103px; width: 649px; opacity: 1; background-image: linear-gradient(to left, transparent, transparent);")
+categorias[0].addEventListener("click", function(){
+    if (clicado_categoria1 == 1 || clicado_categoria2 == 1 || clicado_categoria3 == 1){
+        categorias[1].setAttribute("style", "opacity: 1; background-image: linear-gradient(to left, transparent, transparent);")
+        categorias[2].setAttribute("style", "opacity: 1; background-image: linear-gradient(to left, transparent, transparent);")
+        categorias[3].setAttribute("style", "opacity: 1; background-image: linear-gradient(to left, transparent, transparent);")
+        clicado_categoria1 = 0
+        clicado_categoria2 = 0
+        clicado_categoria3 = 0
+    }
+    if (clicado_categoria0 == 0){
+        categorias[0].setAttribute("style", "opacity: 1; background-image: linear-gradient(to left, transparent, white);")
+        clicado_categoria0 = 1
+    } else {
+        window.location.href = "roupas.html"
+        clicado_categoria0 = 0
+    }
 })
 
 categorias[1].addEventListener("click", function(){
-    categorias[1].setAttribute("style", "height: 180px; width: 488px; opacity: 1; background-image: linear-gradient(to left, transparent, white);")
-    categorias[1].addEventListener("click", function(){
+    if (clicado_categoria0 == 1 || clicado_categoria2 == 1 || clicado_categoria3 == 1){
+        categorias[0].setAttribute("style", "opacity: 1; background-image: linear-gradient(to left, transparent, transparent);")
+        categorias[3].setAttribute("style", "opacity: 1; background-image: linear-gradient(to left, transparent, transparent);")
+        categorias[2].setAttribute("style", "opacity: 1; background-image: linear-gradient(to left, transparent, transparent);")
+        clicado_categoria0 = 0
+        clicado_categoria2 = 0
+        clicado_categoria3 = 0
+    }
+    if (clicado_categoria1 == 0){
+        categorias[1].setAttribute("style", "opacity: 1; background-image: linear-gradient(to left, transparent, white);")
+        clicado_categoria1 = 1
+    } else {
         window.location.href = "todos/todos.html"
-    })
-})
-
-categorias[1].addEventListener("mouseout", function(){
-    categorias[1].setAttribute("style", "height: 160px; width: 428px; opacity: 1; background-image: linear-gradient(to left, transparent, transparent);")
+        clicado_categoria1 = 0
+    }
 })
 
 categorias[2].addEventListener("click", function(){
-    categorias[2].setAttribute("style", "height: 121px; width: 428px; opacity: 1; background-image: linear-gradient(to left, transparent, white);")
-})
-
-categorias[2].addEventListener("mouseout", function(){
-    categorias[2].setAttribute("style", "height: 101px; width: 368px; opacity: 1; background-image: linear-gradient(to left, transparent, transparent);")
+    if (clicado_categoria0 == 1 || clicado_categoria1 == 1 || clicado_categoria3 == 1){
+        categorias[0].setAttribute("style", "opacity: 1; background-image: linear-gradient(to left, transparent, transparent);")
+        categorias[1].setAttribute("style", "opacity: 1; background-image: linear-gradient(to left, transparent, transparent);")
+        categorias[3].setAttribute("style", "opacity: 1; background-image: linear-gradient(to left, transparent, transparent);")
+        clicado_categoria0 = 0
+        clicado_categoria1 = 0
+        clicado_categoria3 = 0
+    }
+    if (clicado_categoria2 == 0){
+        categorias[2].setAttribute("style", "opacity: 1; background-image: linear-gradient(to left, transparent, white);")
+        clicado_categoria2 = 1
+    } else {
+        window.location.href = "todos/todos.html"
+        clicado_categoria2 = 0
+    }
 })
 
 categorias[3].addEventListener("click", function(){
-    categorias[3].setAttribute("style", "height: 127px; width: 598px; opacity: 1; background-image: linear-gradient(to left, transparent, white);")
-})
-
-categorias[3].addEventListener("mouseout", function(){
-    categorias[3].setAttribute("style", "height: 112px; width: 538px; opacity: 1; background-image: linear-gradient(to left, transparent, transparent);")
+    if (clicado_categoria0 == 1 || clicado_categoria1 == 1 || clicado_categoria2 == 1){
+        categorias[1].setAttribute("style", "opacity: 1; background-image: linear-gradient(to left, transparent, transparent);")
+        categorias[2].setAttribute("style", "opacity: 1; background-image: linear-gradient(to left, transparent, transparent);")
+        categorias[3].setAttribute("style", "opacity: 1; background-image: linear-gradient(to left, transparent, transparent);")
+        clicado_categoria0 = 0
+        clicado_categoria1 = 0
+        clicado_categoria2 = 0
+    }
+    if (clicado_categoria3 == 0){
+        categorias[3].setAttribute("style", "opacity: 1; background-image: linear-gradient(to left, transparent, white);")
+        clicado_categoria3 = 1
+    } else {
+        window.location.href = "todos/todos.html"
+        clicado_categoria3 = 0
+    }
 })
 
 menu.addEventListener("click", function(){
-    menus[0].setAttribute("style", "opacity: 1")
-    menus[1].setAttribute("style", "opacity: 1")
-    menu_texto.setAttribute("style", "opacity: 0")
-    menu.setAttribute("style", "height: 800px; top: 0px; right:0px; width: 200px; opacity: 1")
+    if (clicado_menu == 0){
+        menus[0].setAttribute("style", "opacity: 1")
+        menus[1].setAttribute("style", "opacity: 1")
+        div_roupas.setAttribute("style", "opacity:1")
+        div_clude.setAttribute("style", "opacity:1")
+        menu_texto.setAttribute("style", "opacity: 0; top: 200px")
+        clicado_menu = 1
+    } else if (clicado_menu == 1){
+        menus[0].setAttribute("style", "opacity: 0")
+        menus[1].setAttribute("style", "opacity: 0")
+        div_roupas.setAttribute("style", "opacity:0")
+        div_clude.setAttribute("style", "opacity:0")
+        menu_texto.setAttribute("style", "opacity: 1; top: 10px")
+        clicado_menu = 0
+    }
 })
 
-menu.addEventListener("mouseout", function(){
-    menus[0].setAttribute("style", "opacity: 0")
-    menus[1].setAttribute("style", "opacity: 0")
-    menu_texto.setAttribute("style", "opacity: 1")
-    menu.setAttribute("style", "height: 500px; top: 0px; right:0px; width: 100px; opacity: 1")
-})
-
-menus[0].addEventListener("click", function(){
+div_clude.addEventListener("click", function(){
     window.location.href = "../index.html"
 })
 
-menus[1].addEventListener("click", function(){
-    menus[2].setAttribute("style", "opacity: 1")
-    menus[3].setAttribute("style", "opacity: 1")
-    menus[4].setAttribute("style", "opacity: 1")
-    categorias.setAttribute("style", "opacity: 1")
-    menus[1].addEventListener("click", function(){
-        window.location.href = "roupas.html"
-    })
-    menus[2].addEventListener("click", function(){
-        window.location.href = "todos/todos.html"
-    })
-})
-
-menus[1].addEventListener("mouseout", function(){
-    menus[2].setAttribute("style", "opacity: 0")
-    menus[3].setAttribute("style", "opacity: 0")
-    menus[4].setAttribute("style", "opacity: 0")
-    categorias.setAttribute("style", "opacity: 0")
+div_roupas.addEventListener("click", function(){
+    window.location.href = "roupas.html"
 })
     }else {
         window.location.href = "roupas.html"
