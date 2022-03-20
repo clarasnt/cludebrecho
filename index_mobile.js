@@ -1,4 +1,6 @@
-var cinza = document.querySelectorAll(".cinza")
+window.onload = function() {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        var cinza = document.querySelectorAll(".cinza")
 var dentro = document.querySelectorAll(".dentro")
 var menu = document.querySelector("#menu")
 var menus = document.querySelectorAll(".menu")
@@ -88,6 +90,8 @@ menus[1].addEventListener("mouseout", function(){
     menus[4].setAttribute("style", "opacity: 0")
     categorias.setAttribute("style", "opacity: 0")
 })
-
-
+    } else {
+        window.location.href = "index.html"
+    }
+}
 
