@@ -33,7 +33,7 @@ produtos[0].addEventListener("click", function(){
         clicado_produto2 = 0
     }
     if (clicado_produto0 == 0){
-        produtos[0].setAttribute("style", "opacity: 1; background-image: linear-gradient(to left, transparent, white);")
+        produtos[0].setAttribute("style", "opacity: 1; height: 143px; width: 579px; background-image: linear-gradient(to left, transparent, white);")
         clicado_produto0 = 1
     } else {
         window.location.href = "todos.html"
@@ -49,10 +49,11 @@ produtos[2].addEventListener("click", function(){
         clicado_produto2 = 0
     }
     if (clicado_produto1 == 0){
-        produtos[2].setAttribute("style", "opacity: 1; background-image: linear-gradient(to left, transparent, white);")
+        produtos[1].setAttribute("style", "opacity: 1; background-image: linear-gradient(to left, transparent, white); z-index: 0")
+        produtos[2].setAttribute("style", "opacity: 1; background-image: linear-gradient(to left, transparent, white); z-index: 1")
         clicado_produto1 = 1
     } else {
-        window.location.href = "camisa_social_triangulos/camisa_social_triangulos.html"
+        window.open("camisa_social_triangulos/camisa_social_triangulos.html", "_blank")
         clicado_produto1 = 0
     }
 })
@@ -68,7 +69,7 @@ produtos[4].addEventListener("click", function(){
         produtos[4].setAttribute("style", "opacity: 1; background-image: linear-gradient(to left, transparent, white);")
         clicado_produto2 = 1
     } else {
-        window.location.href = "camisa_social_triangulos/camisa_social_triangulos.html"
+        window.location.href = "corset_flor_tribal/corset_flor_tribal.html"
         clicado_produto2 = 0
     }
 })

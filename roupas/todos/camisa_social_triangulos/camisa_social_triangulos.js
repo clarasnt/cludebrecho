@@ -1,13 +1,20 @@
+window.onload = function() {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        window.location.href = "camisa_social_triangulos_mobile.html"
+    } else {
+
 var produtos = document.querySelectorAll(".produtos")
 var menu = document.querySelector("#menu")
 var menus = document.querySelectorAll(".menu")
 var menu_texto = document.querySelector("#menu_texto")
 var categorias = document.querySelector("#categorias")
+var mouse = document.querySelector("#mouse")
 
 setTimeout(() => {
     produtos[0].setAttribute("style", 'opacity: 1')
     menu.setAttribute("style", 'opacity: 1')
     menu_texto.setAttribute("style", 'opacity: 1')
+    mouse.setAttribute("style", 'opacity: 1')
     setTimeout(() => {
         produtos[1].setAttribute("style", 'opacity: 1')
         setTimeout(() => {
@@ -116,3 +123,4 @@ menus[1].addEventListener("mouseout", function(){
     categorias.setAttribute("style", "opacity: 0")
 })
 
+    }}

@@ -74,7 +74,7 @@ produtos[1].addEventListener("click", function(){
 })
 
 produtos[2].addEventListener("click", function(){
-    window.open("https://shopee.com.br/product/280073789/14663391161/", "_blank")
+    window.open("https://shopee.com.br/product/280073789/17624997135/", "_blank")
 })
 
 produtos[3].addEventListener("click", function(){
@@ -138,7 +138,7 @@ produtos[7].addEventListener("click", function(){
 })
 
 produtos[8].addEventListener("click", function(){
-    window.open("https://shopee.com.br/product/280073789/14663391161/", "_blank")
+    window.open("https://shopee.com.br/product/280073789/17624997135/", "_blank")
 })
 
 menu.addEventListener("click", function(){
