@@ -38,7 +38,7 @@ categorias[0].addEventListener("click", function(){
         clicado_categoria3 = 0
     }
     if (clicado_categoria0 == 0){
-        categorias[0].setAttribute("style", "opacity: 1; background-image: linear-gradient(to left, transparent, white);")
+        categorias[0].setAttribute("style", "opacity: 1; height: 163px; width: 959px; background-image: linear-gradient(to left, transparent, white);")
         clicado_categoria0 = 1
     } else {
         window.location.href = "roupas.html"
@@ -56,7 +56,7 @@ categorias[1].addEventListener("click", function(){
         clicado_categoria3 = 0
     }
     if (clicado_categoria1 == 0){
-        categorias[1].setAttribute("style", "opacity: 1; background-image: linear-gradient(to left, transparent, white);")
+        categorias[1].setAttribute("style", "opacity: 1; height: 143px; width: 579px; background-image: linear-gradient(to left, transparent, white);")
         clicado_categoria1 = 1
     } else {
         window.location.href = "todos/todos.html"
@@ -74,7 +74,7 @@ categorias[2].addEventListener("click", function(){
         clicado_categoria3 = 0
     }
     if (clicado_categoria2 == 0){
-        categorias[2].setAttribute("style", "opacity: 1; background-image: linear-gradient(to left, transparent, white);")
+        categorias[2].setAttribute("style", "opacity: 1;  height: 183px; width: 649px; background-image: linear-gradient(to left, transparent, white);")
         clicado_categoria2 = 1
     } else {
         window.location.href = "todos/todos.html"
@@ -92,7 +92,7 @@ categorias[3].addEventListener("click", function(){
         clicado_categoria2 = 0
     }
     if (clicado_categoria3 == 0){
-        categorias[3].setAttribute("style", "opacity: 1; background-image: linear-gradient(to left, transparent, white);")
+        categorias[3].setAttribute("style", "opacity: 1; height: 153px; width: 649px; background-image: linear-gradient(to left, transparent, white);")
         clicado_categoria3 = 1
     } else {
         window.location.href = "todos/todos.html"

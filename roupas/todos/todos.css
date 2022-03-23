@@ -29,6 +29,9 @@ body{
 #todos{
     height: 160px;
     width: 428px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #corset_flor_tribal_foto{

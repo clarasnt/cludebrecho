@@ -16,6 +16,9 @@ body{
 }
 
 #categorias{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     height: 103px;
     width: 649px;
 }
@@ -26,8 +29,8 @@ body{
 }
 
 #todos{
-    height: 160px;
-    width: 428px;
+    height: 103px;
+    width: 412px;
 }
 
 #corset{

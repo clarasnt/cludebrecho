@@ -7,6 +7,16 @@ body{
     background-color: rgb(150, 82, 65);
 }
 
+#mouse{
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    opacity: 0;
+    height: 121px;
+    width: 604px;
+    transition:all 0.5s ease;
+}
+
 .menu{
     opacity: 0;
     position: relative;
@@ -132,9 +142,11 @@ body{
 
 #camisa_social_triangulos{
     height: 209px;
-    width:611px;
-    right: 10px;
+    width: 611px;
     position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #comprar1{

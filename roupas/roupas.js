@@ -35,11 +35,11 @@ categorias[0].addEventListener("mouseout", function(){
 })
 
 categorias[1].addEventListener("mouseover", function(){
-    categorias[1].setAttribute("style", "height: 180px; width: 488px; opacity: 1; background-image: linear-gradient(to left, transparent, white);")
+    categorias[1].setAttribute("style", "height: 113px; width: 462px; opacity: 1; background-image: linear-gradient(to left, transparent, white);")
 })
 
 categorias[1].addEventListener("mouseout", function(){
-    categorias[1].setAttribute("style", "height: 160px; width: 428px; opacity: 1; background-image: linear-gradient(to left, transparent, transparent);")
+    categorias[1].setAttribute("style", "height: 103px; width: 412px; opacity: 1; background-image: linear-gradient(to left, transparent, transparent);")
 })
 
 categorias[2].addEventListener("mouseover", function(){
