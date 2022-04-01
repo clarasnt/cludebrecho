@@ -1,0 +1,160 @@
+@font-face {
+    font-family: varsity;
+    src: url('varsity_regular.ttf') format('opentype')
+}
+
+body{
+    font-family: varsity;
+    background-color: rgb(150, 82, 65);
+    text-align: center;
+}
+
+#mouse{
+    top: 0px;
+    right: 0px;
+    position: relative;
+    opacity: 0;
+    font-size: 60px;
+    transition:all 0.5s ease;
+    color: rgb(15, 70, 141);
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 3px;
+    text-shadow: -7px 7px black;
+}
+
+.menu{
+    opacity: 0;
+    position: relative;
+    top: 10px;
+    right: 10px;
+    transition:all 0.5s ease;
+    text-decoration: none;
+    color: rgb(15, 70, 141);
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 3px;
+    text-shadow: -7px 7px black;
+}
+
+#clude{
+    top: -8px;
+    left: 15px;
+    font-size: 80px;
+}
+
+#menu_texto{
+    opacity: 0;
+    position: absolute;
+    top: -120px;
+    left: 0px;
+    transition:all 0.5s ease;
+    font-size: 100px;
+    width: 100%;
+}
+
+#roupas_menu{
+    top: -7px;
+    left: 50px;
+    font-size: 80px;
+}
+
+#menu{
+    opacity: 0;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    height: 100px;
+    width: 98%;
+    border: white solid 8px;
+    box-shadow: black -8px 8px;
+    background-color: rgb(150, 82, 65);
+    transition:all 0.5s ease;
+    text-align: center;
+    z-index: 1;
+}
+
+.produtos{
+    opacity: 0;
+    position: relative;
+    transition:all 0.5s ease;
+}
+
+.div{
+    position: relative;
+    display: inline;
+    top: 10px;
+    left: 5px;
+    border-spacing: 20px;
+}
+
+#voltar{
+    height: 73px;
+    width: 259px;
+}
+
+#foto1{
+    height: 550px;
+    width: 430px;
+    border: 3px white solid;
+}
+
+#foto2{
+    height: 550px;
+    width: 430px;
+    border: 3px white solid;
+}
+
+#foto3{
+    height: 550px;
+    width: 430px;
+    border: 3px white solid;
+}
+
+#nome{
+    color: rgb(15, 70, 141);
+    text-decoration: none;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 3px;
+    text-shadow: -10px 10px black;
+    font-size: 100px;
+    position: relative;
+}
+
+#comprar1{
+    font-size: 60px;
+    position: absolute;
+    top: -320px;
+    left: 40px;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#preco{
+    font-size: 60px;
+    position: absolute;
+    top: -390px;
+    left: 50px;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#medidas{
+    font-size: 25px;
+    position: absolute;
+    top: -510px;
+    left: 40px;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#comprar4{
+    font-size: 60px;
+    position: absolute;
+    top: -320px;
+    left: 40px;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
